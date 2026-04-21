@@ -1,7 +1,7 @@
 CXX := g++
 CXXFLAGS := -std=c++14 -O3 -I. -MMD -MP -g
 LDFLAGS := 
-SRCS := $(shell find . -name '*.cpp')
+SRCS := main.cpp LayerAssignment.cpp Router2D.cpp
 OBJS := $(SRCS:.cpp=.o)
 DEPS := $(OBJS:.o=.d)
 TARGET := router
